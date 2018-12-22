@@ -1,3 +1,7 @@
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Demo class
  *
@@ -6,7 +10,10 @@
  */
 public class Question6 {
     public static void main(String[] args) {
-        solution("aabcc,dbbca,aadbbcbca");
+        int a = 1;
+        double b = 1.1;
+        double c = a + b;
+        System.out.println(c);
     }
 
     private static String solution(String line) {
