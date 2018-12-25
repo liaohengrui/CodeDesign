@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import org.springframework.util.Assert;
 
 /**
  * Demo class
