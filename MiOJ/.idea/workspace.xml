@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68ee70a1-dac6-4234-8360-607ab1f2706b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiOJ/Question17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiOJ/Question17.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Question20.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1058">
+            <state relative-caret-position="989">
               <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -59,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Question21.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="615">
+              <caret line="103" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="103" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,10 +129,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="38" />
-    <option name="y" value="215" />
-    <option name="width" value="1955" />
-    <option name="height" value="1065" />
+    <option name="x" value="33" />
+    <option name="y" value="210" />
+    <option name="width" value="1960" />
+    <option name="height" value="1070" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -144,31 +142,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MiOJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MiOJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MiOJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MiOJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546349532123" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GoBang" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -262,17 +245,19 @@
       <workItem from="1546146067901" duration="19000" />
       <workItem from="1546310521141" duration="7127000" />
       <workItem from="1546342263964" duration="6970000" />
+      <workItem from="1546390817953" duration="128000" />
+      <workItem from="1546491714847" duration="109000" />
+      <workItem from="1546507001494" duration="68000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75615000" />
+    <option name="totallyTimeSpent" value="75920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33023256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3488372" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -293,7 +278,6 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="LuaCheck" order="13" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32956812" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24983388" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -303,6 +287,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32956812" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32956812" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,12 +337,6 @@
           <line>72</line>
           <properties />
           <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Question21.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -625,7 +604,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Question20.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
+        <state relative-caret-position="989">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -635,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Question21.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="615">
+          <caret line="103" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="103" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
