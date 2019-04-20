@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Digraph:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Digraph_jar</output-path>
-    <root id="archive" name="Digraph.jar">
-      <element id="module-output" name="Digraph" />
-    </root>
-  </artifact>
-</component>
