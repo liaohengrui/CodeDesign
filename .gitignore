@@ -4,3 +4,4 @@ Digraph/out/production/Digraph/Test.class
 .idea/
 out/
 *.iml
+*.gitignore
