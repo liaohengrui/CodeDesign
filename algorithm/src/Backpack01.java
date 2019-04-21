@@ -8,11 +8,11 @@ import java.util.Map;
  */
 @SuppressWarnings("ALL")
 public class Backpack01 {
-    static int bagV = 5;
+    static int bagV = 5 ;
     //花费
-    static int[] nCost = {0, 3, 5, 7};
+    static int[] nCost = {0, 2, 4,4, 5};
     //物体体积
-    static int[] nVol = {0, 2, 3, 4};
+    static int[] nVol = {0, 1, 2, 3,4};
 
     static int[][] maxGetMnery = new int[nCost.length][bagV + 1];
 
