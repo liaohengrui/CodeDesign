@@ -2,10 +2,8 @@ package GuoContest9;
 
 import com.sun.xml.internal.ws.api.pipe.ServerTubeAssemblerContext;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Demo class
@@ -19,40 +17,77 @@ public class Question5 {
     static char[][] model;
     static int M;
     static int N;
-    static int counter;
+    static Integer counter = 0;
 
     public static void main(String[] args) {
-        M = 3;
-        N = 2;
-        model = new char[][]{{'.', 'X', '.'}, {'.', '.', 'X'}};
+        Scanner scanner = new Scanner(System.in);
+        N = scanner.nextInt();
+        M = scanner.nextInt();
+        scanner.nextLine();
+        model = new char[N][M];
+        for (int i = N - 1; i >= 0; i--) {
+            String temp = scanner.nextLine();
+            for (int j = 0; j < M; j++) {
+                model[i][j] = temp.charAt(j);
+            }
+        }
+
         createSolutions();
         linesSolutions = linesSolutions.nextColumn;
         List<String> list = linesSolutions.strings;
+        CountDownLatch latch = new CountDownLatch(list.size());
         for (String s : list) {
             int sHigh = highIs(s);
-            sHigh = sHigh == 0 ? Integer.MAX_VALUE : sHigh;
-            calculateTimes(linesSolutions.nextColumn, sHigh);
+            new Thread(() -> {
+                calculateTimes(linesSolutions.nextColumn, sHigh, null);
+                latch.countDown();
+            }).start();
+        }
+        try {
+            latch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
         System.out.println(counter);
     }
 
-    static public void calculateTimes(NextColumn solution, int superSHigh) {
+    static public void calculateTimes(NextColumn solution, int superSHigh, Boolean slope) {
         if (solution == null) {
-            counter++;
+            synchronized (counter.getClass()) {
+                counter = ++counter % 1000000007;
+            }
             return;
         }
         List<String> list = solution.strings;
         for (String s : list) {
             int sHigh = highIs(s);
-            sHigh = superSHigh < sHigh ? superSHigh : sHigh;
-            if (superSHigh == Integer.MAX_VALUE && sHigh == 0) {
-                sHigh = Integer.MAX_VALUE;
-            }
-            if (sHigh != 0) {
-                calculateTimes(solution.nextColumn, sHigh);
+
+            //斜率判断
+            Boolean aBoolean = slope;
+            if (aBoolean == null) {
+                if (superSHigh != sHigh) {
+                    aBoolean = superSHigh - sHigh <= 0;
+                }
             } else {
-                counter++;
+                boolean tempSlope;
+                if (superSHigh != sHigh) {
+                    tempSlope = superSHigh - sHigh <= 0;
+                    if (tempSlope != aBoolean && !aBoolean) {
+                        return;
+                    } else {
+                        aBoolean = tempSlope;
+                    }
+                }
             }
+
+            if (sHigh != 0 || aBoolean == null) {
+                calculateTimes(solution.nextColumn, sHigh, aBoolean);
+            } else {
+                synchronized (counter.getClass()) {
+                    counter = ++counter % 1000000007;
+                }
+            }
+
         }
     }
 
